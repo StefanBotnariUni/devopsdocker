@@ -33,4 +33,4 @@ jobs:
             uses: docker/build-push-action@v6
             with:
               push: true
-              tags: devopspython:latest
+              tags: ${{ secrets.DOCKERHUB_USERNAME }}/devopspython:latest
